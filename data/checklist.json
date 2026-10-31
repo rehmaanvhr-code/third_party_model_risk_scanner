@@ -1,0 +1,57 @@
+{
+  "items": [
+    {
+      "id": "provenance",
+      "name": "Documented provenance",
+      "weight": 2,
+      "source": "OSFI E-23 section 3 (model development and vendor models); NIST AI RMF Map 4.1",
+      "question": "Is it clear who built the model, from what, and under what process?"
+    },
+    {
+      "id": "license",
+      "name": "License known and compatible",
+      "weight": 2,
+      "source": "ISO/IEC 42001 A.10; NIST AI RMF Govern 6.1",
+      "question": "Is the license identified and does it allow commercial use in a regulated setting?"
+    },
+    {
+      "id": "model_card",
+      "name": "Model card or system card available",
+      "weight": 2,
+      "source": "NIST AI RMF Map 3.4; EU AI Act Art. 53 for general purpose models",
+      "question": "Has the vendor published intended use, limitations and evaluation results?"
+    },
+    {
+      "id": "version_pinned",
+      "name": "Version pinned in code or requirements",
+      "weight": 2,
+      "source": "OSFI E-23 section 4 (model inventory and change control); NIST AI RMF Manage 2.4",
+      "question": "Is the exact version fixed so behaviour does not change silently?"
+    },
+    {
+      "id": "data_residency",
+      "name": "Data residency and retention understood",
+      "weight": 2,
+      "source": "OSFI Guideline B-10 third party risk; ISO/IEC 42001 A.7",
+      "question": "Does data leave the organisation, and if so where is it processed and how long is it kept?"
+    },
+    {
+      "id": "evaluation",
+      "name": "Independent evaluation evidence",
+      "weight": 1,
+      "source": "OSFI E-23 section 3 (validation); NIST AI RMF Measure 2.5",
+      "question": "Has the organisation tested the model on its own data rather than relying on vendor claims?"
+    },
+    {
+      "id": "incident_process",
+      "name": "Vendor incident and deprecation process",
+      "weight": 1,
+      "source": "NIST AI RMF Govern 6.2; EU AI Act Art. 73",
+      "question": "Will the vendor tell you when the model changes, fails or is retired, and is there a fallback?"
+    }
+  ],
+  "bands": {
+    "low": 0.8,
+    "medium": 0.5
+  }
+}

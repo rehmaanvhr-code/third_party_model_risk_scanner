@@ -1,0 +1,54 @@
+{
+  "note": "Facts here were written from public vendor documentation as of late 2026 and are a starting point. The organisation specific items (evaluation, data_residency, incident_process) default to false because only the deploying organisation can answer them.",
+  "models": {
+    "gpt-4o": {
+      "vendor": "OpenAI", "kind": "hosted api", "license": "proprietary, API terms of use",
+      "provenance": true, "license_known": true, "model_card": true,
+      "data_residency_note": "Processed on OpenAI or Azure infrastructure. Zero retention and regional processing available on enterprise terms."
+    },
+    "claude-sonnet-4-5": {
+      "vendor": "Anthropic", "kind": "hosted api", "license": "proprietary, commercial terms",
+      "provenance": true, "license_known": true, "model_card": true,
+      "data_residency_note": "Processed by Anthropic or through AWS Bedrock and Google Vertex regions."
+    },
+    "anthropic.claude-3-haiku-20240307-v1:0": {
+      "vendor": "Anthropic via AWS Bedrock", "kind": "hosted api", "license": "proprietary, AWS Marketplace terms",
+      "provenance": true, "license_known": true, "model_card": true,
+      "data_residency_note": "Stays within the AWS region called."
+    },
+    "sentence-transformers/all-MiniLM-L6-v2": {
+      "vendor": "Hugging Face community (sentence transformers)", "kind": "open weights", "license": "Apache 2.0",
+      "provenance": true, "license_known": true, "model_card": true,
+      "data_residency_note": "Runs locally once downloaded."
+    },
+    "distilbert-base-uncased-finetuned-sst-2-english": {
+      "vendor": "Hugging Face", "kind": "open weights", "license": "Apache 2.0",
+      "provenance": true, "license_known": true, "model_card": true,
+      "data_residency_note": "Runs locally once downloaded."
+    },
+    "command-r": {
+      "vendor": "Cohere", "kind": "hosted api", "license": "proprietary; open weights under CC BY NC for research",
+      "provenance": true, "license_known": true, "license_restrictive": false, "model_card": true,
+      "data_residency_note": "Hosted by Cohere, with private deployment options."
+    },
+    "ultralytics/yolov5": {
+      "vendor": "Ultralytics", "kind": "open weights", "license": "AGPL 3.0 (commercial license sold separately)",
+      "provenance": true, "license_known": true, "license_restrictive": true, "model_card": false,
+      "data_residency_note": "Runs locally. AGPL terms are a common blocker for commercial use."
+    }
+  },
+  "packages": {
+    "openai": "OpenAI API",
+    "anthropic": "Anthropic API",
+    "transformers": "Hugging Face transformers",
+    "sentence_transformers": "sentence transformers",
+    "huggingface_hub": "Hugging Face hub",
+    "langchain": "LangChain",
+    "langchain_community": "LangChain community",
+    "cohere": "Cohere API",
+    "vertexai": "Google Vertex AI",
+    "google.generativeai": "Google Gemini API",
+    "boto3": "AWS SDK (Bedrock when used with bedrock client)",
+    "torch": "PyTorch"
+  }
+}
