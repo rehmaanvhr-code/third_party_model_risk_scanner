@@ -1,0 +1,18 @@
+file,kind,name,pinned,version,provenance,license,model_card,version_pinned,data_residency,evaluation,incident_process,vendor,license_text,score,risk_band
+services/embeddings.py,package,sentence_transformers,False,,True,True,False,False,False,False,False,,,0.333,high
+services/embeddings.py,package,transformers,False,,True,True,False,False,False,False,False,,,0.333,high
+services/embeddings.py,model_id,distilbert-base-uncased-finetuned-sst-2-english,False,,True,True,True,False,False,False,False,Hugging Face,Apache 2.0,0.5,medium
+services/embeddings.py,model_id,sentence-transformers/all-MiniLM-L6-v2,True,,True,True,True,True,False,False,False,Hugging Face community (sentence transformers),Apache 2.0,0.667,medium
+services/fraud_rules.py,package,boto3 bedrock,True,1.34.100,True,True,False,True,False,False,False,,,0.5,medium
+services/fraud_rules.py,model_id,anthropic.claude-3-haiku-20240307-v1:0,True,,True,True,True,True,False,False,False,Anthropic via AWS Bedrock,"proprietary, AWS Marketplace terms",0.667,medium
+services/legacy_rag.py,package,langchain,False,,True,True,False,False,False,False,False,,,0.333,high
+services/legacy_rag.py,package,langchain_community,False,,True,True,False,False,False,False,False,,,0.333,high
+services/legacy_rag.py,package,torch,False,,True,True,False,False,False,False,False,,,0.333,high
+services/legacy_rag.py,model_id,command-r,False,,True,True,True,False,False,False,False,Cohere,proprietary; open weights under CC BY NC for research,0.5,medium
+services/legacy_rag.py,model_id,ultralytics/yolov5,True,,True,False,False,True,False,False,False,Ultralytics,AGPL 3.0 (commercial license sold separately),0.333,high
+services/chat_service.py,package,anthropic,False,,True,True,False,False,False,False,False,,,0.333,high
+services/chat_service.py,package,openai,True,1.51.0,True,True,False,True,False,False,False,,,0.5,medium
+services/chat_service.py,model_id,claude-sonnet-4-5,False,,True,True,True,False,False,False,False,Anthropic,"proprietary, commercial terms",0.5,medium
+services/chat_service.py,model_id,gpt-4o,False,,True,True,True,False,False,False,False,OpenAI,"proprietary, API terms of use",0.5,medium
+models/churn_lstm.pt,model_file,churn_lstm.pt,False,,False,True,False,False,True,False,False,,,0.333,high
+models/fraud_gbm_v3.pkl,model_file,fraud_gbm_v3.pkl,True,,False,True,False,True,True,False,False,,,0.5,medium
